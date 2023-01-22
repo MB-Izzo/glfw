@@ -92,3 +92,6 @@ project "GLFW"
 		runtime "Release"
 		optimize "on"
         symbols "off"
+
+    filter { "system:windows", "configurations:Release" }
+        buildoptions "/MT"
